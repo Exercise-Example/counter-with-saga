@@ -140,3 +140,5 @@ export default Counter;
 ## 完成
 
 恭喜你，現在查看網頁並測試看看吧。我們完成了一秒後可以+1功能的按鈕了。或是你也可以查看我的範例。下次我們再來研究怎麼使用saga來獲取API的資料吧。
+
+[DEMO](https://codesandbox.io/s/github/Exercise-Example/counter-with-saga)
