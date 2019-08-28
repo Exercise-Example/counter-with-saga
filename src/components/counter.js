@@ -2,7 +2,7 @@ import React from "react";
 
 class Counter extends React.Component {
   render() {
-    const { value, onIncrement, onDecrement, incrementAsync, readRibbt,data } = this.props;
+    const { value, onIncrement, onDecrement, incrementAsync} = this.props;
     return (
       <div>
         <h2>Counter</h2>
@@ -10,7 +10,9 @@ class Counter extends React.Component {
           <button type="button" onClick={onIncrement}>
             +
           </button>
-          <p>{value}</p>
+          {' '}
+          <span>{value}</span>
+          {' '}
           <button type="button" onClick={onDecrement}>
             -
           </button>
@@ -19,15 +21,6 @@ class Counter extends React.Component {
               Increment async
             </button>
           </div>
-          <div>
-            <button type="button" onClick={readRibbt}>
-              readRibbt
-            </button>
-          </div>
-          <div>
-            { data? JSON.stringify(data.data):''}
-          </div>
-         
         </div>
       </div>
     );

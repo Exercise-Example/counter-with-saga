@@ -1,5 +1,4 @@
 import { createStore,applyMiddleware} from 'redux';
-// import thunk from 'redux-thunk';
 import createSagaMiddleware from 'redux-saga'
 import rootReducer from '../reducers';
 import rootSaga from '../sagas/index'
@@ -10,9 +9,9 @@ export default function configureStore(initialState) {
   const store = createStore(
     rootReducer,
     initialState,
-    // applyMiddleware(thunk)
     applyMiddleware(sagaMiddleware)
   );
+  
   sagaMiddleware.run(rootSaga)
 
   if (module.hot) {

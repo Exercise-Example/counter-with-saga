@@ -29,7 +29,6 @@ export function readRibbt() {
 }
 
 export function readSucces(data) {
-  console.log('action 啟動')
   return {
     type: READ_SUCCES,
     payload:  data
